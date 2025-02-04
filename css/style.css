@@ -1,0 +1,203 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0px auto;
+  margin: 0px auto;
+}
+body {
+  background-color: black;
+}
+:root {
+  --color-banner: rgb(0, 0, 0);
+  --bg--cal: rgb(0, 0, 0);
+  --bg-txt-cal: rgb(15, 20, 27);
+}
+.Banner {
+  background-color: var(--color-banner);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80px repeat(2, auto);
+  grid-template-rows: auto;
+  gap: 40px;
+  align-items: center;
+  text-align: center;
+  font-size: 16pt;
+  justify-content: space-evenly;
+}
+.BinfP {
+  font-size: 10pt;
+  text-align: right;
+  font-style: oblique;
+  font-weight: bold;
+}
+.recuadro {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg--cal);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+}
+.contxt {
+  color: rgb(255, 255, 255);
+  background-color: var(--bg-txt-cal);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  justify-content: end;
+}
+#op {
+  font-size: 1.5rem;
+}
+#resul {
+  font-size: 2rem;
+}
+.teclas {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  align-items: center;
+}
+.tecla {
+  padding-top: 44px;
+  padding-bottom: 30px;
+}
+.tecla:hover {
+  width: 70%;
+  height: 50%;
+  text-align: center;
+  background-color: rgb(19, 25, 34);
+  border-radius: 2px;
+  font-size: 1.7rem;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+#cls {
+  grid-column: 3/1;
+}
+
+#mult,
+#div,
+#suma,
+#rest,
+#elevado {
+  width: 100%;
+  color: rgb(0, 153, 255);
+  background-color: rgb(31, 36, 43);
+  align-items: center;
+  text-align: center;
+}
+#cls,
+#corta,
+#punto,
+#igual {
+  color: rgb(0, 255, 191);
+}
+@media only screen and (max-width: 1000px) {
+  .Banner {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 10pt;
+    justify-content: space-evenly;
+  }
+  #imagen {
+    width: 50%;
+  }
+  .BinfP {
+    font-size: 7pt;
+  }
+  .contxt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .teclas {
+    font-size: 1rem;
+  }
+  .tecla {
+    padding-top: 44px;
+    padding-bottom: 34px;
+  }
+  .tecla:hover {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  #mult,
+  #div,
+  #suma,
+  #rest,
+  #elevado {
+    background-color: rgb(0, 133, 138);
+    width: 100%;
+    color: azure;
+    align-items: center;
+    text-align: center;
+  }
+  #cls,
+  #corta,
+  #punto,
+  #igual {
+    color: rgb(0, 133, 138);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Banner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: center;
+    font-size: 10pt;
+    justify-content: space-evenly;
+  }
+  #imagen {
+    display: none;
+  }
+  .BinfP {
+    display: none;
+  }
+  .contxt {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .teclas {
+    font-size: 1rem;
+  }
+  .tecla {
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+  .tecla:hover {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  #mult,
+  #div,
+  #suma,
+  #rest,
+  #elevado {
+    background-color: rgb(0, 44, 138);
+    width: 100%;
+    color: azure;
+    align-items: center;
+    text-align: center;
+  }
+}

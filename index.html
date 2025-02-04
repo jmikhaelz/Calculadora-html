@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css\style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="js/script.js"
+      language="javascript"
+      type="text/javascript"
+    ></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="Principal">
+      <div class="Banner">
+        <div id="imagen">
+          <img src="img/Logo_de_la_BUAP.png" width="100%" />
+        </div>
+        <div>
+          <h1>Calculadora</h1>
+        </div>
+        <div class="BinfP">
+          <p>
+            Alumno : Jesus Miguel Zenteno | 202047300 <br>
+            Materia: Desarrollo de Aplicaciones Web<br />
+          </p>
+        </div>
+      </div>
+      <div class="recuadro">
+        <div class="contxt">
+          <div id="op">0</div>
+          <div id="resul"></div>
+        </div>
+        <div class="teclas">
+          <div id="cls" class="tecla" onclick="cls();">C</div>
+          <div id="corta" class="tecla" onclick="corta();">⌫</div>
+          <div id="elevado" class="tecla" onclick="ex();">^</div>
+          <div id="siete" class="tecla" onclick="siete();">7</div>
+          <div id="ocho" class="tecla" onclick="ocho();">8</div>
+          <div id="nueve" class="tecla" onclick="nueve();">9</div>
+          <div id="mult" class="tecla" onclick="mult();">x</div>
+          <div id="cuatro" class="tecla" onclick="cuatro();">4</div>
+          <div id="cinco" class="tecla" onclick="cinco();">5</div>
+          <div id="seis" class="tecla" onclick="seis();">6</div>
+          <div id="div" class="tecla" onclick="div();">÷</div>
+          <div id="uno" class="tecla" onclick="uno();">1</div>
+          <div id="dos" class="tecla" onclick="dos();">2</div>
+          <div id="tres" class="tecla" onclick="tres();">3</div>
+          <div id="suma" class="tecla" onclick="suma();">+</div>
+          <div id="punto" class="tecla" onclick="punto();">.</div>
+          <div id="cero" class="tecla" onclick="cero();">0</div>
+          <div id="igual" class="tecla" onclick="resultado();">=</div>
+          <div id="rest" class="tecla" onclick="resta();">-</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
